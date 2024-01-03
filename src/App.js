@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import MainPage from "./pages/MainPage/MainPage"
+import style from "./global.module.scss"
+import Playbar from "./components/Playbar/Playbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className={style.wrapper}>
+    <MainPage />
+    <Playbar />
+  </div>
+);
 
-export default App;
+export default App
